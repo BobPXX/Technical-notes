@@ -16,7 +16,7 @@ Solution: When the GPU architecture is too new or old, this error happens. We ne
 ```python -c "import torch; print(torch.cuda.is_available())"```
 ```
 pip show torch | grep Location
-python /parent_dir/site_packages/torch/utils/collect_env.py
+python /location/torch/utils/collect_env.py
 ```
 
 ### conda pack env
@@ -106,6 +106,7 @@ conda install -c https://conda.anaconda.org/menpo opencv3
   sudo chmod a+r /usr/local/cuda-11.4/lib64/libcudnn*
   cat /usr/local/cuda-11.4/include/cudnn.h | grep CUDNN_MAJOR -A 2
   ```
+### [NVIDIAドライバを更新せずに新しいCUDAを使う（データセンタ向けGPU限定）](https://zenn.dev/yuyakato/articles/f93b35d269d245)
 
 
 
