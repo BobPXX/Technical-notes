@@ -12,6 +12,7 @@ Solution: When the GPU architecture is too new or old, this error happens. We ne
         ]
 
 ```
+（check GPU architecture here: https://qiita.com/k_ikasumipowder/items/1142dadba01b42ac6012）
 ### Check GPU-related info
 ```python -c "import torch; print(torch.cuda.is_available())"```
 ```
