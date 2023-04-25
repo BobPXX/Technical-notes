@@ -83,7 +83,7 @@ conda install -c https://conda.anaconda.org/menpo opencv3
   sudo reboot
   nvidia-smi # check nvidia info
   ```
-- Install cuda
+- Install toolkit
   - Download cuda toolkit (runfile) from web & install following prompts
   - When installing, ignore "Driver" because it has been installed
   - ```sudo vim ~/.bashrc```
