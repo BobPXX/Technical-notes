@@ -107,7 +107,6 @@ conda install -c https://conda.anaconda.org/menpo opencv3
   sudo chmod a+r /usr/local/cuda-11.4/lib64/libcudnn*
   cat /usr/local/cuda-11.4/include/cudnn.h | grep CUDNN_MAJOR -A 2
   ```
-### [NVIDIAドライバを更新せずに新しいCUDAを使う（データセンタ向けGPU限定）](https://zenn.dev/yuyakato/articles/f93b35d269d245)
 
 ### CUDA Framework
 <img src="img/cuda.png" width="500">
@@ -118,7 +117,7 @@ conda install -c https://conda.anaconda.org/menpo opencv3
   - cuDNN is CUDA Deep Neural Network library, belonging to CUDA Libraries
 
 #### Notes
-- Most of Torch functionality directly work upon on CUDA Driver. That is why through [Forward Compatible Upgrade], latest Torch version can partially work.
+- Most of Torch functionality directly work upon on CUDA Driver. That is why through [Forward Compatible Upgrade](https://zenn.dev/yuyakato/articles/f93b35d269d245), latest Torch version can partially work.
 - For Custom C++ and CUDA Extensions (e.g., python setup.py build develop), Runtime is used. The Toolkit and Driver must be compatible.
 - Cudatoolkit installed with conda/pip package is only partial Libraries (without Runtime), incomplete. 
 - Some commands:
