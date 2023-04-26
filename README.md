@@ -121,8 +121,8 @@ conda install -c https://conda.anaconda.org/menpo opencv3
 - For Custom C++ and CUDA Extensions (e.g., python setup.py build develop), Runtime is used. The Toolkit and Driver must be compatible.
 - Cudatoolkit installed with conda/pip package is only partial Libraries (without Runtime), incomplete. 
 - Some commands:
-  - nvidia-smi shows CUDA driver version
-  - Nvcc –version shows CUDA runtime version
+  - ```nvidia-smi``` shows CUDA driver version
+  - ```nvcc –-version``` shows CUDA runtime version
   (driver version >=runtime version)
 
 
