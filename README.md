@@ -125,6 +125,24 @@ conda install -c https://conda.anaconda.org/menpo opencv3
   - ```nvcc –-version``` shows CUDA runtime version
   (driver version >=runtime version)
 
+### Doceker
+```
+#pull Docker image from Docker Hub
+docker pull nvidia/cuda:11.1.1-devel-ubuntu20.04 
+
+#start a new Docker & display GPUs info
+docker run --rm --gpus all nvidia/cuda:11.1.1-devel-ubuntu20.04 nvidia-smi 
+
+#start a new Docker & mount local directory /home/local_dir into the container at the "/workspace" directory
+docker run --name container_name --gpus all -v /home/local_dir:/workspace -it nvidia/cuda:11.1.1-devel-ubuntu20.04 /bin/bash
+
+#star a previous stopped Docker container 
+docker start container_name
+
+#starts a Bash shell inside the running Docker container
+docker exec -it container_name /bin/bash
+```
+
 
 
 
